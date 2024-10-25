@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form id="addAccountForm">
+        <label for="accountHolderName">accountHolderName</label>
+        <input type="text" name="accountHolderName" id="accountHolderName" value="Doe" />
+      
+        <label for="balance">balance</label>
+        <input type="number" name="balance" id="balance" step="0.1" value="100.00"/>
+        <button type="submit">add</button>
+      </form>
+
+      <form id="getByIdForm">
+        <label for="id">Account Holder Id</label>
+        <input type="number" name="id" id="id" value=1 /> 
+        <button type="submit">find account by id#</button>
+      </form>
+
+      <form id="depositForm">
+        <label for="id">account id#</label>
+        <input type="number" name="id" id="id" value=1 /> 
+        <label for="amount">amount to deposit</label>
+        <input type="number" name="amount" id="amount" step="0.1" value="100.00"/>
+        <button type="submit">Validate transaction</button>
+      </form>
+
+      <form id="withdrawForm">
+        <label for="id">account id#</label>
+        <input type="number" name="id" id="id" value=1 /> 
+        <label for="amount">amount to withdraw</label>
+        <input type="number" name="amount" id="amount" step="0.1" value="100.00"/>
+        <button type="submit">Validate transaction</button>
+      </form>
+
+      <form id="getAllForm">        
+        <button type="submit">Show all accounts</button>
+      </form>
+
+      <form id="deleteByIdForm">
+        <label for="id">Account Holder Id</label>
+        <input type="number" name="id" id="id" value=1 /> 
+        <button type="submit">Delete account</button>
+      </form>
+
+      <div class="results">
+        <h2 class="results__heading">Form Data</h2>
+        <pre class="results__display-wrapper"><code class="results__display"></code></pre>
+      </div>
+        <script src="create_account.js"></script>
+        <script src="find_account_by_id.js"></script>
+        <script src="deposit.js"></script>
+        <script src="withdraw.js"></script>
+
+</body>
+</html>
