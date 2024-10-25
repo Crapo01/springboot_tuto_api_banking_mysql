@@ -7,7 +7,7 @@ java project, maven
 dependencies:
 Spring web  
 Spring Data Jpa
-PostgreSQL Driver
+mySql Driver
 Lombok
 
 
