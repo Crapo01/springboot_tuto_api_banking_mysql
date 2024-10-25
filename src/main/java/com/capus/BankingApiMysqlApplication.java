@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BankingApiMsqlApplication {
+public class BankingApiMysqlApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BankingApiMsqlApplication.class, args);
+		SpringApplication.run(BankingApiMysqlApplication.class, args);
 	}
 
 }

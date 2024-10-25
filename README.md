@@ -19,17 +19,31 @@ https://stackoverflow.com/questions/71518442/cannot-load-driver-class-jdbcmysql-
 
 //connect to db  
 
-spring.datasource.url = jdbc:mysql://127.0.0.1:3306/banking  
-spring.datasource.driver-class-name = com.mysql.cj.jdbc.Driver  
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect  
-spring.datasource.username = root  
-spring.datasource.password =
+spring.datasource.url=jdbc:mysql://localhost:3306/banking  
+spring.datasource.username=root  
+spring.datasource.password=  
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver  
+spring.jpa.show-sql: true   
  
  
 
 //auto create tables  
 
 spring.jpa.hibernate.ddl-auto=update  
+
+## project structure
+
+/banking_api_mysql/src/main/java/com/capus
+
+add packages:
+
+controller  
+entity  
+repository  
+service>serviceimpl  
+dto  
+mapper  
+  
 
 
 
